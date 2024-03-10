@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --primary-color: #00B4D8;
+  --secondary-color: #0077B6;
+  --accent1-color: #03045E;
+  --accent2-color: #90E0EF;
+
+  --heading-font: "Archivo Black", sans-serif;
+  --paragraph-font: 'Rubik', sans-serif;
+
+  --nav-background-color: #03045E;
+  --nav-link-color: #00B4D8;
+  --nav-hover-link-color: #ffffff;
+  --nav-hover-background-color: #90E0EF;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+}
+
+div {
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+h3 {
+  background-color: #03045E;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+p {
+  padding: 25px;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  color: var(--accent1-color);
+  background-color: #90E0EF;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  color: #ffff;
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  color: #ffff;
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  color: #ffff;
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  color: #ffff;
+  background-color: var(--accent2-color);
+}
+

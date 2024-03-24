@@ -25,34 +25,38 @@
 
 body {
   font-family: var(--paragraph-font);
-  background-color: #ffffff
+  background-color: var(--nav-background-color)
 }
 
 
 /* Header */
-.about-header {
-  background-color: var(--nav-background-color);
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.navbar-header {
-  display: flex;
-  justify-content: center;
+.about-header {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 120px 2fr;
   align-items: center;
-  width: fit-content;
-  height: 70px;
-  padding: 0px;
-  margin: 0;
+  max-width: 1000px;
   background-color: var(--nav-background-color);
 }
 
 .about-header img {
-  width: 150px;
+  margin: 0 0.25rem 0 1rem;
+  width: 100px;
+  height: auto;
+}
+
+
+.navbar-header {
+  display: flex;
+  list-style: none;
+  flex: 1 1 100%;
+  justify-content: space-around;
+}
+
+.navbar-header {
+  text-align: right;
+  align-items: center;
 }
 
 .navbar-header a {
@@ -71,8 +75,9 @@ body {
 /* Hero section */
 .hero {
   position: relative;
-  padding: 0px 0;
+  padding: 0;
   text-align: center;
+  overflow: hidden;
 }
 
 .background-image {
@@ -80,50 +85,62 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
+
 }
 
 .hero h1 {
   position: absolute;
-  top: 3%;
-  background-color: var(--nav-link-color);
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
+  background-color: var(--nav-link-color);
   font-family: var(--heading-font);
   color: #FFFFFF;
   text-align: center;
-  padding: 15px;
-  font-size: 48px;
-  font-weight: 800;
+  padding: 10px;
+  font-size: 45px;
   line-height: 1.2;
+  margin: 0;
 }
 
 .hero>.clients {
   position: absolute;
   width: 40%;
   top: 40%;
-  left: 30%;
+  left: 50%;
+  transform: translate(-50%, -10%);
   background-color: var(--nav-link-color);
-  padding: 5px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
   display: block;
 }
 
 .hero>.clients p {
   color: white;
   font-family: var(--paragraph-font);
-  padding: 2px;
-  font-size: 16px;
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 .hero>.clients img {
-  float: right;
+  display: inline;
   height: 150px;
+  margin-left: 20px;
+  vertical-align: middle;
 }
 
-/* History  */
+/* History */
 
 .history {
   background-color: var(--accent1-color);
   padding: 20px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .history h2 {
@@ -137,31 +154,55 @@ body {
   font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: justify;
   color: var(--primary-color);
+  max-width: 800px;
+}
+
+.history img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 /* Adventures */
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  background-color: var(--primary-color);
+  padding: 20px;
+  margin-bottom: 30px;
+}
 
 .adventures h2 {
+  grid-column: 1 / -1;
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 2rem;
-  color: var(--primary-color);
+  color: var(--accent1-color);
 }
 
 .adventures img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  padding: 5px;
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+
 }
 
-.adventures p {
-  margin: 8px;
-  color: var(--accent1-color);
-  font-size: 15px;
-  margin-bottom: 0;
+.adventures figure {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+  box-shadow: 0 0 30px rgb(61, 61, 61);
+}
+
+.adventures figcaption {
+  background-color: var(--nav-background-color);
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 10px;
+  text-align: center;
 }
 
 /* Footer */
@@ -170,6 +211,19 @@ footer {
   color: var(--primary-color);
   text-align: center;
   padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  text-decoration: underline;
+  margin: 0;
+}
+
+.sociallinks {
+  display: flex;
+  align-items: center;
 }
 
 .sociallinks img {

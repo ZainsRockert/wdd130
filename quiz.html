@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page is an HTML and CSS Quiz, usig the forms"
+    />
+    <title>Quiz HTML/CSS</title>
+    <link rel="stylesheet" href="styles/quiz.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Rafting Website</a>
+        <a href="#">Rafting Siteplan</a>
+        <a href="#" target="_blank">Linkedin</a>
+        <a href="#" target="_blank">Facebook</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="grid">
+        <h1><span class="checkmark">✓</span> Basic HTML and CSS Quiz</h1>
+
+        <!-- Form -->
+        <form class="quiz">
+          <!-- Question 1 -->
+          <label for="q1">1. What does the acronym CSS stand for?</label>
+          <input type="text" name="q1" id="q1" />
+          <br />
+
+          <!-- Question 2 -->
+          <label for="q2"
+            >2. How are id and class attributes selected in CSS?</label
+          >
+          <textarea name="q2" id="q2" cols="30" rows="10"></textarea>
+          <br />
+
+          <!-- Question 3 -->
+          <label for="q3"
+            >3. Which of the following is a valid CSS comment</label
+          >
+          <select name="q3" id="q3">
+            <option value="" select disabled>Choose one...</option>
+            <option value="1">\\ This is a valid comment //</option>
+            <option value="2">/* This is a valid comment */</option>
+            <option value="3"># This is not a valid comment #</option>
+          </select>
+          <br />
+
+          <!-- Question 4 -->
+          <label for="q4"
+            >4. What is the bottom margin gven this declaration?</label
+          >
+          <span class="code">margin: 10px 5px 15px;</span>
+          <br />
+          <input type="number" name="q4" id="q4" />
+          <br />
+
+          <!-- Submit Button -->
+          <button type="submit">Submit Quiz</button>
+        </form>
+        <br>
+      </div>
+    </main>
+
+    <footer>
+      <p>©2024 🎶Marcos Macho 🎶 Puerto Cumarebo, Venezuela</p>
+    </footer>
+  </body>
+  <!-- last update = 25/03/2024 -->
+</html>

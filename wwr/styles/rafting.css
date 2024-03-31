@@ -334,16 +334,8 @@ select {
   color: #FFFFFF;
 }
 
-.button{
+.radio-group [type="button"]:checked {
   background-color: var(--accent1-color);
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-size: 16px;
-  line-height: normal;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all .2s ease-in-out;
 }
 
 .contactContentbutton,

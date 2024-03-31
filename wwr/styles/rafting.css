@@ -216,34 +216,92 @@ body {
 .contact {
   text-align: center;
   padding: 20px;
-  border: 1px solid black;
-  margin-bottom:10px;
-}
-.contact-content {
+  margin-bottom: 10px;
   background-color: #00B4D8;
 }
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 50%;
-  gap: 10px;
-  text-align: left;
-  line-height: 2rem;
-  margin-top: 12px;
-}
 
-.contact-content h2 {
-  text-align: center;
-  padding: 20px;
+.contact h1 {
+  font-family: var(--heading-font);
+  font-size: 45px;
+  color: #FFFFFF;
   margin-bottom: 18px;
 }
 
-.contact-content img {
-  width: 350px;
-  height: auto;
+.p1 {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: var(--accent1-color);
 }
 
-.contact-content label, input[type="text"], input[type="email"],
-textarea, select {
+.contact-content {
+  display: grid;
+  grid-template-columns: 2fr 40%;
+  gap: 2rem;
+  align-items: start;
+  justify-content: space-between;
+  text-align: left;
+  line-height: 2rem;
+  margin-top: 20px;
+  justify-items: stretch;
+}
+
+
+.contact-content h2 {
+  text-align: left;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.p2 {
+  font-size: 15px;
+  max-width: 50ch;
+  color: var(--accent1-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.p3 {
+  font-size: 15px;
+  max-width: 50ch;
+  color: var(--accent1-color);
+}
+
+.p3::first-letter {
+  font-weight: bolder;
+  color: #FFFFFF;
+}
+
+.customer-attention figcaption {
+  display: flex;
+  width: 28%;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: var(--nav-background-color);
+  color: #fff;
+  font: italic smaller sans-serif;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.contact-content img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgb(61, 61, 61);
+}
+
+form {
+  margin-top: 30px;
+  color: #FFFFFF;
+}
+
+.contact-content label,
+input[type="text"],
+input[type="email"],
+textarea,
+select {
   padding: 6px;
   width: 90%;
   font-weight: bold;
@@ -268,16 +326,17 @@ textarea, select {
 
 .radio-group label {
   font-size: 16px;
-  color: #333;
+  color: #FFFFFF;
 }
 
 .radio-group input[type="radio"]:checked {
-  background-color: #3498db;
+  background-color: var(--accent1-color);
 }
 
-.contactContentbutton, .newsletterbutton {
-  background-color: #000080;
-  color: #fff;
+.contactContentbutton,
+.newsletterbutton {
+  background-color: var(--accent1-color);
+  color: #ffffff;
   padding: 14px 22px;
   border: none;
   border-radius: 8px;

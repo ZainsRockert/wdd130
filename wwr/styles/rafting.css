@@ -560,7 +560,7 @@ select {
   background-color: var(--accent2-color);
 }
 
-.contactContent button,
+.contactContentbutton,
 .newsletterbutton {
   background-color: var(--accent2-color);
   color: var(--accent1-color);

@@ -556,7 +556,7 @@ select {
   color: #FFFFFF;
 }
 
-.box-form .radio-group [type="button"]:checked {
+.radio-group [type="button"]:checked {
   background-color: var(--accent2-color);
 }
 

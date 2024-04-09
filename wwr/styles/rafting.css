@@ -140,14 +140,6 @@ h6 {
   margin-top:  12px;
 }
 
-/* .history {
-  background-color: var(--accent1-color);
-  padding: 20px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .indexcontent {
   display: grid;
@@ -448,7 +440,7 @@ h6 {
 }
 
 
-/*CONTACT US PAGE STYLES*/
+/* CONTACT US PAGE STYLES */
 .contact {
   text-align: center;
   padding: 20px;
@@ -482,7 +474,6 @@ h6 {
   justify-items: stretch;
 }
 
-
 .contact-content h2 {
   text-align: left;
   margin-bottom: 10px;
@@ -490,18 +481,13 @@ h6 {
   text-decoration: underline;
 }
 
-.p2 {
+.p2,
+.p3 {
   font-size: 15px;
   max-width: 50ch;
   color: var(--accent1-color);
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-.p3 {
-  font-size: 15px;
-  max-width: 50ch;
-  color: var(--accent1-color);
 }
 
 .p3::first-letter {
@@ -529,8 +515,8 @@ h6 {
 }
 
 .map {
-  width:430px; 
-  height:250px;
+  width: 430px;
+  height: 250px;
   border: none;
 }
 
@@ -570,14 +556,14 @@ select {
   color: #FFFFFF;
 }
 
-.radio-group [type="button"]:checked {
-  background-color: var(--accent1-color);
+.box-form .radio-group [type="button"]:checked {
+  background-color: var(--accent2-color);
 }
 
-.contactContentbutton,
+.contactContent button,
 .newsletterbutton {
-  background-color: var(--accent1-color);
-  color: #ffffff;
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
   padding: 14px 22px;
   border: none;
   border-radius: 8px;
@@ -586,8 +572,11 @@ select {
   cursor: pointer;
 }
 
-.newsletterbutton {
-  background-color: var(--accent2-color) !important;
+.box-form {
+  background-color: var(--accent1-color);
+  padding-left: 45px;
+  border-radius: 15px;
+  padding-bottom: 12px;
 }
 
 /*FOOTER SECCTION*/
